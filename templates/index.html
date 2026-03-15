@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora Flask</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+
+<body>
+
+<div class="container">
+    <h1>Calculadora Simples</h1>
+
+    <form method="POST">
+        <input type="number" name="numero 1" placeholder="Primeiro número">
+        <input type="number" name="numero 2" placeholder="Segundo número">
+        <button type="submit">Somar</button>
+    </form>
+
+    <h2>Resultado: {{ resultado }}</h2>
+</div>
+
+</body>
+</html>

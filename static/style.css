@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    text-shadow: 0 0 12px rgba(130, 100, 255, 0.8);
+}
+
+form {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 40px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+    width: 340px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 14px 18px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1.5px solid rgba(130, 100, 255, 0.5);
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+input[type="number"]:focus {
+    border-color: #a78bfa;
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.25);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 6px;
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.3s, filter 0.3s;
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.55);
+}
+
+button[type="submit"]:hover {
+    filter: brightness(1.15);
+    box-shadow: 0 6px 28px rgba(124, 58, 237, 0.75);
+    transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0px);
+    box-shadow: 0 2px 12px rgba(124, 58, 237, 0.5);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 28px;
+    font-size: 1.25rem;
+    color: #c4b5fd;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(167, 139, 250, 0.6);
+}
